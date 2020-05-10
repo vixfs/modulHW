@@ -24,7 +24,7 @@ CREATE TABLE accounts
 ## Запросы
 
 ### Регистрация
-POST-запрос https://localhost:5001/users/register
+POST-запрос https://localhost:5001/users/register  
 Body (raw, JSON):
 ```
 {
@@ -34,20 +34,20 @@ Body (raw, JSON):
 ```
 
 ### Получение токена (авторизация)
-POST-запрос https://localhost:5001/users/token
-Body (raw, JSON):
+POST-запрос https://localhost:5001/users/token  
+Body (raw, JSON):  
 ```
 {
   "Email": "vasya@fail.com",
   "Password": "veryhardpass"
 }
 ```
-Получаем токен
+Получаем токен  
 
 ### Пополнение баланса (собственного счета)
-POST-запрос https://localhost:5001/transactions/refill
-Authorization, Bearer token - вставляем токен.
-Body (raw, JSON):
+POST-запрос https://localhost:5001/transactions/refill  
+Authorization, Bearer token - вставляем токен.  
+Body (raw, JSON):  
 ```
 {
 	"amount": 5000
@@ -56,14 +56,14 @@ Body (raw, JSON):
 amount - сумма пополнения.
 
 ### Перевод денег
-POST-запрос https://localhost:5001/transactions/transfer
-Authorization, Bearer token - вставляем токен.
-Body (raw, JSON):
+POST-запрос https://localhost:5001/transactions/transfer  
+Authorization, Bearer token - вставляем токен.  
+Body (raw, JSON):  
 ```
 {
 	"RecipientAccountId": 4423638066,
 	"amount": 150
 }
 ```
-RecipientAccountId - счет получателя (в БД accounts.accountNumber)
-amount - сумма перевода
+RecipientAccountId - счет получателя (в БД accounts.accountNumber)  
+amount - сумма перевода  
