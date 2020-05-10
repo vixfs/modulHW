@@ -1,0 +1,10 @@
+bin/
+obj/
+/packages/
+riderModule.iml
+/_ReSharper.Caches/
+/.idea/.idea.MoneyService/.idea/.gitignore
+/.idea/.idea.MoneyService/.idea/encodings.xml
+/.idea/.idea.MoneyService/.idea/indexLayout.xml
+/.idea/.idea.MoneyService/.idea/misc.xml
+/.idea/.idea.MoneyService/.idea/vcs.xml
